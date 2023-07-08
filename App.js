@@ -3,6 +3,7 @@ import React,{ useState } from 'react';
 import MainScreen from './MainScreen';
 import IntroScreen from './IntroScreen';
 import { colors } from './MyColors';
+import { StatusBar } from 'expo-status-bar';
 
 const App = () => {
   const [isloaded,setIsLoaded] = useState(false);
@@ -13,6 +14,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style='default'/>
       {isloaded ? <MainScreen/> : <IntroScreen/>}
     </SafeAreaView>
   )
