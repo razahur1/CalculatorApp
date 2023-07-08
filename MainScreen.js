@@ -166,8 +166,8 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     width: '100%',
-    paddingVertical: 30,
-    backgroundColor: "white",
+    paddingVertical: 10,
+    backgroundColor: colors.light,
     alignItems: "center",
    
   },
